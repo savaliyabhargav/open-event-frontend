@@ -1,4 +1,4 @@
-FROM node:14.19.1-bullseye-slim as builder
+FROM node:14.21.2-bullseye-slim as builder
 
 WORKDIR /app
 
@@ -20,7 +20,7 @@ RUN yarn l10n:generate && \
 ##
 ##
 
-FROM node:14.19.1-bullseye-slim
+FROM node:14.21.2-bullseye-slim
 
 WORKDIR /fastboot
 
